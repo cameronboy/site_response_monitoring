@@ -1,0 +1,87 @@
+{
+   "Youtube": {
+      "type": "Dedicated",
+      "provider": "Google",
+      "url": "https://www.youtube.com"
+   },
+   "Youtube TV": {
+      "type": "Dedicated",
+      "provider": "Google",
+      "url": "https://tv.youtube.com"
+   },
+   "Hulu": {
+      "type": "Dedicated",
+      "provider": "Hulu",
+      "url": "https://www.hulu.com"
+   },
+   "Netflix": {
+      "type": "Dedicated",
+      "provider": "Netflix",
+      "url": "https://www.netflix.com"
+   },
+   "Amazon": {
+      "type": "Dedicated",
+      "provider": "Amazon",
+      "url": "https://www.amazon.com"
+   },
+   "Acorn TV": {
+      "type": "Dedicated",
+      "provider": "RLJ Entertainment",
+      "url": "https://www.acorn.tv"
+   },
+   "Urban Movie Channel": {
+      "type": "Dedicated",
+      "provider": "RLJ Entertainment",
+      "url": "https://umc.tv"
+   },
+   "CBS All Access": {
+      "type": "Station",
+      "provider": "CBS",
+      "url": "https://www.cbs.com"
+   },
+   "DirecTV now": {
+      "type": "Provider",
+      "provider": "AT&T",
+      "url": "https://www.directvnow.com"
+   },
+   "FuboTV": {
+      "type": "Dedicated",
+      "provider": "FuboTV",
+      "url": "https://www.fubo.tv"
+   },
+   "HBO Now": {
+      "type": "Station",
+      "provider": "HBO",
+      "url": "https://play.hbonow.com/"
+   },
+   "PlayStation Vue": {
+      "type": "Dedicated",
+      "provider": "Sony",
+      "url": "https://vue.playstation.com/watch/"
+   },
+   "Showtime": {
+      "type": "Station",
+      "provider": "Showtime",
+      "url": "https://www.showtime.com"
+   },
+   "SlingTV": {
+      "type": "Provider",
+      "provider": "Dish Network",
+      "url": "https://www.sling.com/"
+   },
+   "Go90": {
+      "type": "Provider",
+      "provider": "Verizon",
+      "url": "https://www.go90.com"
+   },
+   "xfinity TV": {
+      "type": "Provider",
+      "provider": "Comcast",
+      "url": "https://tv.xfinity.com/"
+   },
+   "Layer3": {
+      "type": "Provider",
+      "provider": "Tmobile",
+      "url": "https://layer3tv.com"
+   }
+}
