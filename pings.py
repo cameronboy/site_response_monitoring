@@ -22,10 +22,10 @@ def main():
         url = servers[idx]["site"]
         provider = servers[idx]["provider"]
         typ = servers[idx]["type"]
+        cat = servers[idx]["category"]
         response = requests.post(url).elapsed.total_seconds()
         time = str(datetime.now())
-        row = [site, typ, provider, url, time, response]
-        sheet.append_row([site, typ, provider, url, time, response])
+        sheet.append_row([site, typ, cat, provider, url, time, response])
 
 if __name__ == '__main__':
     main()
