@@ -19,9 +19,10 @@ def main():
     servers = file.open("Sites").sheet1.get_all_records()
     # Go through the servers and check their response time and write it to Ping Monitoring sheet
     for idx in range(len(servers)):
-        url = servers[idx]["site"]
+        url = servers[idx]["url"]
         provider = servers[idx]["provider"]
         typ = servers[idx]["type"]
+        site = servers[idx]["site"]
         cat = servers[idx]["category"]
         response = requests.post(url).elapsed.total_seconds()
         time = str(datetime.now())
