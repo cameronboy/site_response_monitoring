@@ -26,7 +26,6 @@ def main():
         cat = servers[idx]["category"]
         response = requests.post(url).elapsed.total_seconds()
         time = str(datetime.now())
-        row = [site, typ, provider, url, time, response]
         sheet.append_row([site, typ, cat, provider, url, time, response])
 
 if __name__ == '__main__':
