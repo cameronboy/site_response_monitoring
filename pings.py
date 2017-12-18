@@ -1,6 +1,5 @@
 
 import requests
-import json
 import gspread
 from oauth2client.service_account import ServiceAccountCredentials
 from datetime import datetime
@@ -24,7 +23,11 @@ def main():
         typ = servers[idx]["type"]
         site = servers[idx]["site"]
         cat = servers[idx]["category"]
-        response = requests.post(url).elapsed.total_seconds()
+        # TODO: add more sophisticated error handling
+        if requests.post(url):
+            response = requests.post(url).elapsed.total_seconds()
+        else:
+            else response = 'error'
         time = str(datetime.now())
         sheet.append_row([site, typ, cat, provider, url, time, response])
 
