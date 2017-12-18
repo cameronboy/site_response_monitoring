@@ -24,12 +24,10 @@ def main():
         site = servers[idx]["site"]
         cat = servers[idx]["category"]
         # TODO: add more sophisticated error handling
-        if requests.post(url):
-            response = requests.post(url).elapsed.total_seconds()
-        else:
-            else response = 'error'
+        response = requests.post(url).elapsed.total_seconds()
         time = str(datetime.now())
         sheet.append_row([site, typ, cat, provider, url, time, response])
+
 
 if __name__ == '__main__':
     main()
